@@ -1,10 +1,22 @@
 {
-  "name": "camarim",
+  "_comentario": "package.json: lista as dependencias do projeto e os comandos (scripts) disponiveis. 'npm install' baixa tudo que esta em dependencies/devDependencies. 'npm run dev' executa o script 'dev', que chama o Vite.",
+  "name": "auth-example",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
   }
 }

@@ -1,0 +1,147 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F1F1F5;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 40px 36px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1A1A2E;
+  text-align: center;
+  margin: 0 0 6px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: #6B6B85;
+  text-align: center;
+  margin: 0 0 28px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A1A2E;
+}
+
+.login-field input {
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #1A1A2E;
+  background: #FFFFFF;
+  border: 1.5px solid #E4E4EC;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.login-field input:focus {
+  border-color: #6153E0;
+  box-shadow: 0 0 0 3px rgba(97, 83, 224, 0.12);
+}
+
+.login-forgot {
+  align-self: flex-start;
+  font-size: 14px;
+  color: #6153E0;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: -6px;
+}
+
+.login-forgot:hover {
+  text-decoration: underline;
+}
+
+.login-error {
+  font-size: 13px;
+  color: #DC2626;
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin: 0;
+}
+
+/* Botão com contorno roxo, fundo branco — igual ao modelo de referência */
+.login-button {
+  margin-top: 4px;
+  padding: 13px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #6153E0;
+  background: #FFFFFF;
+  border: 1.5px solid #6153E0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+
+.login-button:hover:not(:disabled) {
+  background: rgba(97, 83, 224, 0.06);
+}
+
+.login-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.login-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.login-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #6B6B85;
+  margin: 20px 0 0;
+}
+
+.login-footer a,
+.login-footer button {
+  color: #6153E0;
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.login-footer a:hover,
+.login-footer button:hover {
+  text-decoration: underline;
+}
